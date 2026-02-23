@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
   <!-- ===== SEO PRIMARY ===== -->
   <title>Nous Hàbits | Nutricionista y Farmacéutica en Moncofar y Online – Celia</title>
   <meta name="description" content="Celia, nutricionista y farmacéutica en Moncofar (Castellón). Consulta presencial y online. Nutrición clínica personalizada, patologías digestivas, educación nutricional y talleres. Nº Col. CV12061. Llama al +34 614 131 053." />
@@ -126,7 +131,7 @@
   <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <style>
     /* ===== RESET & VARIABLES ===== */
@@ -193,6 +198,20 @@
       object-fit: contain;
     }
 
+    /* ===== CINZEL HEADINGS ===== */
+    .section-title,
+    .hero-title,
+    .service-title,
+    .form-title,
+    .online-title,
+    .footer-logo,
+    .stat-num,
+    .step-num,
+    .faq-question,
+    .testimonial-card .author-name {
+      font-family: 'Cinzel', serif;
+    }
+
     .nav-links {
       display: flex;
       gap: 2rem;
@@ -249,18 +268,20 @@
     }
 
     .hero-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(3rem, 5vw, 5rem);
-      font-weight: 300;
-      line-height: 1.1;
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.2rem, 4vw, 4rem);
+      font-weight: 400;
+      line-height: 1.2;
       color: var(--brown);
       margin-bottom: 1.5rem;
+      letter-spacing: .02em;
       opacity: 0;
       animation: fadeUp .8s .4s forwards;
     }
     .hero-title em {
-      font-style: italic;
+      font-style: normal;
       color: var(--sage-dk);
+      font-weight: 600;
       display: block;
     }
 
@@ -374,7 +395,7 @@
     }
     .hero-plant-icon svg { width: 160px; height: 160px; opacity: .7; }
     .hero-plant-text {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Cinzel', serif;
       font-size: 1.8rem;
       font-weight: 300;
       font-style: italic;
@@ -396,7 +417,7 @@
     }
     .hero-stat-card:nth-child(4) { bottom: 60px; right: 40px; animation-delay: -1s; }
     .hero-stat-card:nth-child(5) { top: 120px; left: 30px; animation-delay: -3s; }
-    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--brown); line-height: 1; }
+    .stat-num { font-family: 'Cinzel', serif; font-size: 2rem; font-weight: 600; color: var(--brown); line-height: 1; }
     .stat-label { font-size: .75rem; color: var(--muted); font-weight: 500; }
     .stat-icon { font-size: 1.8rem; }
 
@@ -413,14 +434,18 @@
       margin-bottom: 1rem;
     }
     .section-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Cinzel', serif;
       font-size: clamp(2rem, 3.5vw, 3rem);
-      font-weight: 300;
+      font-weight: 400;
       color: var(--brown);
-      line-height: 1.2;
+      line-height: 1.25;
       margin-bottom: 1rem;
     }
-    .section-title em { font-style: italic; color: var(--sage-dk); }
+    .section-title em {
+      font-style: normal;
+      color: var(--sage-dk);
+      font-weight: 600;
+    }
     .section-desc { color: var(--muted); max-width: 520px; line-height: 1.8; font-size: 1rem; }
 
     /* ===== ABOUT ===== */
@@ -530,11 +555,12 @@
     .service-card:hover::before { transform: scaleX(1); }
     .service-icon { font-size: 2.2rem; margin-bottom: 1rem; display: block; }
     .service-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
       font-weight: 600;
       color: var(--brown);
       margin-bottom: .6rem;
+      letter-spacing: .02em;
     }
     .service-desc { font-size: .88rem; color: var(--muted); line-height: 1.7; }
     .service-tag {
@@ -581,7 +607,7 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto 1.2rem;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Cinzel', serif;
       font-size: 1.4rem;
       font-weight: 600;
       color: var(--sage-dk);
@@ -604,14 +630,19 @@
       margin: 2rem 0;
     }
     .online-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 3vw, 2.8rem);
-      font-weight: 300;
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+      font-weight: 400;
       color: var(--white);
-      line-height: 1.2;
+      line-height: 1.3;
       margin-bottom: 1rem;
+      letter-spacing: .02em;
     }
-    .online-title em { font-style: italic; color: var(--warm); }
+    .online-title em {
+      font-style: normal;
+      color: var(--warm);
+      font-weight: 600;
+    }
     .online-desc { color: rgba(255,255,255,.8); line-height: 1.8; margin-bottom: 2rem; }
     .online-features { list-style: none; display: flex; flex-direction: column; gap: .75rem; margin-bottom: 2.5rem; }
     .online-features li {
@@ -681,7 +712,7 @@
     }
     .testimonial-card::before {
       content: '"';
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Cinzel', serif;
       font-size: 5rem;
       line-height: 1;
       color: var(--sage);
@@ -788,7 +819,7 @@
       box-shadow: var(--shadow);
     }
     .form-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Cinzel', serif;
       font-size: 1.6rem;
       color: var(--brown);
       margin-bottom: 1.5rem;
@@ -849,13 +880,14 @@
       margin-bottom: 3rem;
     }
     .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
       color: var(--white);
-      font-weight: 600;
+      font-weight: 700;
+      letter-spacing: .08em;
       margin-bottom: .75rem;
     }
-    .footer-logo em { font-style: italic; color: var(--warm); }
+    .footer-logo em { font-style: normal; color: var(--warm); }
     .footer-desc { font-size: .88rem; line-height: 1.7; max-width: 280px; }
     .footer-heading { font-size: .8rem; text-transform: uppercase; letter-spacing: .15em; color: var(--warm); margin-bottom: 1rem; font-weight: 600; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
@@ -1307,7 +1339,7 @@
           <div class="contact-icon">✉️</div>
           <div>
             <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:noushabits.educacioalimentaria@gmail.com">noushabits.educacioalimentaria@gmail.com</a></div>
+            <div class="contact-value"><a href="/cdn-cgi/l/email-protection#95fbfae0e6fdf4f7fce1e6bbf0f1e0f6f4f6fcfaf4f9fcf8f0fbe1f4e7fcf4d5f2f8f4fcf9bbf6faf8"><span class="__cf_email__" data-cfemail="bed0d1cbcdd6dfdcd7cacd90dbdacbdddfddd7d1dfd2d7d3dbd0cadfccd7dffed9d3dfd7d290ddd1d3">[email&#160;protected]</span></a></div>
           </div>
         </div>
         <div class="contact-item">
@@ -1428,7 +1460,7 @@
 </footer>
 
 <!-- ========== JS ========== -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Nav scroll effect
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -1477,13 +1509,4 @@
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   // Form submission (placeholder)
-  document.querySelector('form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = e.target.querySelector('.form-submit');
-    btn.textContent = '✅ ¡Solicitud enviada! Te contactaré pronto.';
-    btn.style.background = 'var(--sage-dk)';
-    btn.disabled = true;
-  });
-</script>
-</body>
-</html>
+  document.querySelector('form').addEve
